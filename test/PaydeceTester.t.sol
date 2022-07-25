@@ -91,4 +91,27 @@ contract ContractTester is Test {
         this.createEscrow(caller, 0, payable(buyer), payable(seller), _value, _sellerfee, _buyerfee);
         this.createEscrow(caller, 0, payable(buyer), payable(seller), _value, _sellerfee, _buyerfee);
     }
+
+    function testFailsToReleaseEscrowFailsWithArithmeticErrorWithSellerFeeOfZero(
+        uint _value,
+        uint _orderId,
+        uint _sellerfee
+    ) public {
+        vm.assume(_value > 0);
+        vm.assume(_value < FAUCET_AMOUNT);
+
+        address caller = vm.addr(10);
+        vm.label(caller, "Caller");
+
+        address buyer = vm.addr(20);
+        vm.label(buyer, "Buyer");
+
+        address seller = vm.addr(30);
+        vm.label(seller, "Seller");
+
+        this.createEscrow(caller, _orderId, payable(buyer), payable(seller), _value, _sellerfee, 0);
+
+        vm.prank(buyer);
+        escrow.releaseEscrow(_orderId);
+    }
 }
