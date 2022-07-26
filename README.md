@@ -1,3 +1,7 @@
+# Contract
+
+The contract is live on the BSC at the address `https://bscscan.com/address/0xaa15a71515116ae395784e100f7ccc2385680e8d`
+
 # Optimizations
 
 - A lot (most) of the dependencies can be removed. This will reduce deployment costs substancially.
@@ -50,7 +54,8 @@ All ERC20 token transfers are assumed to be successful. This is not always the c
 ### 7 (**LEVEL 3**)
 `releaseEscrow` reverts with arithmetic overflow/underflow. The equations need to be completely re-worked.
 
-
+### 8 (**LEVEL 3**)
+`createEscrow` transactions can be front run to ceate fradulant transactions. All funds are at risk.
 
 # Final Remarks
 
