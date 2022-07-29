@@ -54,7 +54,7 @@ All ERC20 token transfers are assumed to be successful. This is not always the c
 ### 7 (**LEVEL 3**)
 `releaseEscrow` reverts with arithmetic overflow/underflow. The equations need to be completely re-worked.
 
-### 8 (**LEVEL 3**)
+### 8 (**LEVEL 2**)
 `createEscrow` transactions can be front run to ceate fradulant transactions. All funds are at risk.
 
 # Final Remarks
