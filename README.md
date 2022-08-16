@@ -1,10 +1,10 @@
 # Contract
 
 **Escrow contract addresses** 
-(OLD) BSC: `0xaa15a71515116ae395784e100f7ccc2385680e8d`
-Polygon Mainnet: `0xde8248e12ca4fdff2c638b0c604e1ea6943cc9bd`
-RSK Mainnet: `0xDe8248E12Ca4FDff2c638b0c604E1eA6943Cc9Bd`
-Ethereum Mainnet: `0xde8248e12ca4fdff2c638b0c604e1ea6943cc9bd`
+- (OLD) BSC: `0xaa15a71515116ae395784e100f7ccc2385680e8d`
+- Polygon Mainnet: `0xde8248e12ca4fdff2c638b0c604e1ea6943cc9bd`
+- RSK Mainnet: `0xDe8248E12Ca4FDff2c638b0c604E1eA6943Cc9Bd`
+- Ethereum Mainnet: `0xde8248e12ca4fdff2c638b0c604e1ea6943cc9bd`
 
 # Optimizations
 
